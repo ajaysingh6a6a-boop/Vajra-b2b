@@ -8,7 +8,7 @@
   
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -25,9 +25,9 @@
             brand: {
               gold: '#F59E0B',
               green: '#10B981',
-              dark: '#0B0F19',
-              card: '#111827',
-              border: '#1F2937'
+              dark: '#070B12',
+              card: '#0F172A',
+              border: '#1E293B'
             }
           }
         }
@@ -45,7 +45,7 @@
   <!-- TOP TICKER -->
   <div class="bg-amber-500/10 border-b border-amber-500/20 px-3 py-1.5 text-center text-[11px] sm:text-xs text-amber-300 font-semibold tracking-wide flex items-center justify-center gap-2">
     <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-    <span>SURAT DIRECT MILL SURPLUS BROADCAST • FRESH LOTS DAILY • DISPATCH FROM SURAT MANDI</span>
+    <span>SURAT DIRECT MILL SURPLUS BROADCAST • SAMPLE CUT COURIER DISPATCH • DIRECT DISPATCH FROM SURAT MANDI</span>
   </div>
 
   <!-- NAVIGATION HEADER -->
@@ -77,7 +77,7 @@
   <!-- MAIN CONTAINER -->
   <main class="max-w-5xl mx-auto px-4 pt-6 space-y-8">
 
-    <!-- HERO / TITLE -->
+    <!-- HERO SECTION -->
     <section class="text-center space-y-3 pt-2">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
         <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
@@ -87,8 +87,32 @@
         Surat Textile Mills Ka <span class="gold-text">Surplus & Ready Stock</span>
       </h1>
       <p class="text-xs sm:text-sm text-slate-400 max-w-xl mx-auto leading-relaxed">
-        Bina kisi bicholiye ke direct mill discounted rates par maal kharido. Har lot physically verified aur sample guarantee ke sath.
+        Bina kisi bicholiye ke direct mill discounted rates par maal kharido. Har lot ka sample cut courier dwara lene ki 100% suvidha.
       </p>
+    </section>
+
+    <!-- DEDICATED SAMPLE CUT POLICY BANNER -->
+    <section class="p-4 sm:p-5 rounded-2xl border-2 border-emerald-500/40 bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-900 text-left shadow-xl space-y-3">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-emerald-500/20 pb-3">
+        <div class="flex items-center gap-2">
+          <span class="text-2xl">📦</span>
+          <div>
+            <h3 class="text-base font-extrabold text-white">HAMARI OFFICIAL SAMPLE POLICY</h3>
+            <p class="text-[11px] text-emerald-400 font-semibold">Bahar Ke Vyapaariyon Ke Liye Sample Cut Dispatch Guarantee</p>
+          </div>
+        </div>
+        <span class="text-xs px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 font-bold border border-emerald-500/30">
+          Sample Pass = Lot Dispatch
+        </span>
+      </div>
+      <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+        Hume pata hai kapda bina chuye kharidna mushkil hota hai. Agar aap Surat se bahar hain, to deal se pehle hum <strong class="text-white">aapke pate par fabric ka sample cut courier</strong> karwayenge. Haath me feel karein, print aur GSM check karein—jab aap sample approve karenge, wahi exact lot aapke shahar rawana hoga.
+      </p>
+      <div class="pt-1">
+        <a href="https://wa.me/919510401971?text=Radhe%20Radhe!%20Mujhe%20apne%20address%20par%20fabric%20sample%20cut%20courier%20karwana%20hai." target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white transition shadow-lg shadow-emerald-600/20">
+          <span>📦 Sample Cut Courier Se Mangwayein</span>
+        </a>
+      </div>
     </section>
 
     <!-- SECTION 1: LIVE BROADCAST LOTS -->
@@ -101,10 +125,10 @@
         <span class="text-xs text-slate-400">Surat Godown Ready</span>
       </div>
 
-      <!-- LOT CONTAINER (Dynamically Populated / Fallback Default) -->
+      <!-- LOT CONTAINER -->
       <div id="lots-container" class="space-y-4">
         
-        <!-- CARD 1 (Sample / Default Lot) -->
+        <!-- CARD 1 (Default / Sample Lot) -->
         <div class="p-4 sm:p-5 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition shadow-lg space-y-3">
           <div class="flex flex-wrap items-center justify-between gap-2">
             <span class="text-[11px] font-bold px-2.5 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">
@@ -124,12 +148,16 @@
             <span class="ml-auto text-xs font-semibold text-slate-300">Total: 4,800 Mtr</span>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
-            <a href="https://wa.me/919510401971?text=Lot%20Lock%20Karna%20Hai:%20Lot%20101%20(14%20KG%20Rayon%20Mill%20Print%20Surplus)%20Rate%2029.50" target="_blank" class="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-center bg-emerald-600 hover:bg-emerald-500 text-white transition flex items-center justify-center gap-1.5 shadow-lg shadow-emerald-600/20">
+          <!-- 3 BUTTONS: LOCK, SAMPLE COURIER, VIDEO -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-2">
+            <a href="https://wa.me/919510401971?text=Lot%20Lock%20Karna%20Hai:%20Lot%20101%20(14%20KG%20Rayon%20Mill%20Print%20Surplus)%20Rate%2029.50" target="_blank" class="w-full py-2.5 px-3 rounded-xl text-xs font-bold text-center bg-emerald-600 hover:bg-emerald-500 text-white transition flex items-center justify-center gap-1 shadow-lg shadow-emerald-600/20">
               <span>🔒 Lot Lock Karo</span>
             </a>
-            <a href="https://wa.me/919510401971?text=Mujhe%20Lot%20101%20ka%20fabric%20video%20ya%20sample%20photo%20bhejo" target="_blank" class="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-center bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center justify-center gap-1.5">
-              <span>📹 Video / Sample Maango</span>
+            <a href="https://wa.me/919510401971?text=Mujhe%20Lot%20101%20ka%20Sample%20Cut%20Courier%20karwana%20hai" target="_blank" class="w-full py-2.5 px-3 rounded-xl text-xs font-bold text-center bg-amber-500 hover:bg-amber-400 text-black transition flex items-center justify-center gap-1 shadow-md">
+              <span>📦 Sample Cut Mangwao</span>
+            </a>
+            <a href="https://wa.me/919510401971?text=Mujhe%20Lot%20101%20ka%20fabric%20video%20ya%20photos%20bhejo" target="_blank" class="w-full py-2.5 px-3 rounded-xl text-xs font-bold text-center bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition flex items-center justify-center gap-1">
+              <span>📹 Video / Photo</span>
             </a>
           </div>
         </div>
@@ -137,7 +165,7 @@
       </div>
     </section>
 
-    <!-- SECTION 2: WHATSAPP BROADCAST LEAD FORM -->
+    <!-- SECTION 2: WHATSAPP VIP BROADCAST LEAD FORM -->
     <section class="p-5 sm:p-6 rounded-2xl bg-gradient-to-br from-slate-900 via-slate-900 to-amber-950/20 border border-amber-500/30 text-center space-y-3 shadow-xl">
       <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/10 text-amber-400">
         <span>⚡ VIP BROADCAST</span>
@@ -167,7 +195,7 @@
       <p id="lead-msg" class="text-xs font-medium text-emerald-400 hidden pt-1">✓ Aap list me add ho gaye hain! Jaldi pehla update aayega.</p>
     </section>
 
-    <!-- SECTION 3: VAJRA VYAPAAR SURAKSHA GUARANTEE (3-WAY PILLARS) -->
+    <!-- SECTION 3: VAJRA 4-WAY SURAKSHA GUARANTEE -->
     <section class="p-5 sm:p-6 rounded-2xl border border-emerald-500/40 bg-gradient-to-b from-slate-900 to-slate-950 text-left shadow-2xl space-y-4">
       <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
         <div class="flex items-center gap-2">
@@ -182,51 +210,62 @@
         </span>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5 pt-1">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 pt-1">
         
-        <!-- PILLAR 1: 100% PAISA SAFE -->
+        <!-- PILLAR 1: SAMPLE COURIER -->
+        <div class="p-4 rounded-xl bg-slate-850/80 border border-slate-800 hover:border-emerald-500/40 transition space-y-2">
+          <div class="text-emerald-400 font-bold text-sm flex items-center gap-2">
+            <span class="text-base">📦</span>
+            <span>Sample Cut Courier</span>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Outstation buyers ke liye seedha courier se sample cut dispatch. Haath me touch karein, pasand aane par hi lot order karein.
+          </p>
+        </div>
+
+        <!-- PILLAR 2: 100% PAISA SAFE -->
         <div class="p-4 rounded-xl bg-slate-850/80 border border-slate-800 hover:border-emerald-500/40 transition space-y-2">
           <div class="text-emerald-400 font-bold text-sm flex items-center gap-2">
             <span class="text-base">💰</span>
             <span>100% Paisa Safe (Escrow)</span>
           </div>
           <p class="text-xs text-slate-300 leading-relaxed">
-            Buyer aur Seller dono ka payment 100% surakshit rehta hai. Jab tak quality aur deal confirm nahi hoti, paisa safe hold me rehta hai. Zero risk trading.
+            Buyer aur Seller dono ka payment secure rehta hai. Jab tak quality aur deal verify nahi hoti, payment safe hold par rehta hai.
           </p>
         </div>
 
-        <!-- PILLAR 2: QUALITY INSPECTION & SAMPLE -->
+        <!-- PILLAR 3: PHYSICAL GODOWN INSPECTION -->
         <div class="p-4 rounded-xl bg-slate-850/80 border border-slate-800 hover:border-emerald-500/40 transition space-y-2">
           <div class="text-emerald-400 font-bold text-sm flex items-center gap-2">
             <span class="text-base">🔍</span>
-            <span>Physical Quality Inspection</span>
+            <span>Physical Inspection</span>
           </div>
           <p class="text-xs text-slate-300 leading-relaxed">
-            Surat Ring Road ya Mill Godown par aakar khud kapda check karein. Outstation buyers ke liye sample cut courier suvidha uplabdh hai—jo pass hoga, wahi dispatch hoga.
+            Surat Ring Road ya Mill Godown par aakar khud kapde ka thaam, thaapi aur print quality physically check kar sakte hain.
           </p>
         </div>
 
-        <!-- PILLAR 3: DELIVERY & BILTY SUPPORT -->
+        <!-- PILLAR 4: DELIVERY & BILTY SUPPORT -->
         <div class="p-4 rounded-xl bg-slate-850/80 border border-slate-800 hover:border-emerald-500/40 transition space-y-2">
           <div class="text-emerald-400 font-bold text-sm flex items-center gap-2">
             <span class="text-base">🚚</span>
-            <span>End-to-End Delivery Support</span>
+            <span>Delivery & Bilty Support</span>
           </div>
           <p class="text-xs text-slate-300 leading-relaxed">
-            Surat transport godown booking, LR (Bilty) generation aur aapke shahar tak dispatch coordinate karane me poori assistance. Maal deliver hone tak Vajra team sath khadi hai.
+            Surat transport godown booking, LR (Bilty) generation aur aapke shahar tak safe transport dispatch me poori team support karti hai.
           </p>
         </div>
 
       </div>
 
-      <!-- HELPLINE & EMAIL STRIP -->
+      <!-- HELPLINE & OFFICIAL EMAIL STRIP -->
       <div class="pt-3 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
-        <span>🤝 Deal, quality ya transport se juda koi bhi sawaal ho? Seedha contact karein:</span>
+        <span>🤝 Deal, sample ya transport se juda koi bhi sawaal ho? Seedha contact karein:</span>
         <div class="flex flex-wrap items-center gap-4">
           <a href="tel:+919510401971" class="font-extrabold text-emerald-400 hover:underline flex items-center gap-1 text-sm">
             📞 +91 9510401971
           </a>
-          <a href="mailto:contact@vajrab2b.com" class="font-semibold text-amber-400 hover:underline flex items-center gap-1">
+          <a href="mailto:contact@vajrab2b.com" class="font-semibold text-amber-400 hover:underline flex items-center gap-1 text-sm">
             ✉️ contact@vajrab2b.com
           </a>
         </div>
@@ -297,10 +336,8 @@
 
   <!-- JAVASCRIPT: LOGIC & BACKEND SYNC -->
   <script>
-    // GOOGLE APPS SCRIPT WEB APP URL
     const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwOaU9LzB-wQkZ1jC8Vq2qL4Z7n7-M5H3Q2X_placeholder/exec"; 
 
-    // SUBMIT LEAD PHONE NUMBER
     async function submitLead(event) {
       event.preventDefault();
       const phoneInput = document.getElementById("lead-phone");
@@ -331,11 +368,4 @@
       btn.innerText = "JOINED ✓";
 
       setTimeout(() => {
-        btn.disabled = false;
-        btn.innerText = "JOIN ALERT";
-      }, 4000);
-    }
-  </script>
-
-</body>
-</html>
+        btn.disabled = 
